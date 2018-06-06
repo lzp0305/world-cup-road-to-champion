@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="云端科技 www.yunduancn.com">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<title></title>
+	<link rel="stylesheet" href="css/minireset.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<script>
+		var mainData = {};
+		document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.getBoundingClientRect().width ||
+		  window.screen.width) / 20 + 'px'
+	</script>
+	<div class="groups">
+		<div class="group">
+			<p class="group-name">A组</p>
+			<ul >
+				<li class="">
+					<img src="images/Russia.jpg" alt="" class="country-icon">
+					<span class="country-name">俄罗斯</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Egypt.jpg" alt="" class="country-icon">
+					<span class="country-name">埃及</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/SaudiArabia.jpg" alt="" class="country-icon">
+					<span class="country-name">沙特阿拉伯</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Uruguay.jpg" alt="" class="country-icon">
+					<span class="country-name">乌拉圭</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">B组</p>
+			<ul >
+				<li class="">
+					<img src="images/Iran.jpg" alt="" class="country-icon">
+					<span class="country-name">伊朗</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Morocco.jpg" alt="" class="country-icon">
+					<span class="country-name">摩洛哥</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Portugal.jpg" alt="" class="country-icon">
+					<span class="country-name">葡萄牙</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Spain.jpg" alt="" class="country-icon">
+					<span class="country-name">西班牙</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">C组</p>
+			<ul >
+				<li class="">
+					<img src="images/Australia.jpg" alt="" class="country-icon">
+					<span class="country-name">澳大利亚</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Denmark.jpg" alt="" class="country-icon">
+					<span class="country-name">丹麦</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/France.jpg" alt="" class="country-icon">
+					<span class="country-name">法国</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Peru.jpg" alt="" class="country-icon">
+					<span class="country-name">秘鲁</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">D组</p>
+			<ul >
+				<li class="">
+					<img src="images/Argentina.jpg" alt="" class="country-icon">
+					<span class="country-name">阿根廷</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Croatia.jpg" alt="" class="country-icon">
+					<span class="country-name">克罗地亚</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Iceland.jpg" alt="" class="country-icon">
+					<span class="country-name">冰岛</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Nigeria.jpg" alt="" class="country-icon">
+					<span class="country-name">尼日利亚</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">E组</p>
+			<ul >
+				<li class="">
+					<img src="images/Brazil.jpg" alt="" class="country-icon">
+					<span class="country-name">巴西</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/CostaRica.jpg" alt="" class="country-icon">
+					<span class="country-name">哥斯达黎加</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Switzerland.png" alt="" class="country-icon">
+					<span class="country-name">瑞士</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Serbia.jpg" alt="" class="country-icon">
+					<span class="country-name">塞尔维亚</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">F组</p>
+			<ul >
+				<li class="">
+					<img src="images/Germany.jpg" alt="" class="country-icon">
+					<span class="country-name">德国</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Korea.jpg" alt="" class="country-icon">
+					<span class="country-name">韩国</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Mexico.jpg" alt="" class="country-icon">
+					<span class="country-name">墨西哥</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Sweden.jpg" alt="" class="country-icon">
+					<span class="country-name">瑞典</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">G组</p>
+			<ul >
+				<li class="">
+					<img src="images/Belgium.jpg" alt="" class="country-icon">
+					<span class="country-name">比利时</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/England.jpg" alt="" class="country-icon">
+					<span class="country-name">英格兰</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Panama.jpg" alt="" class="country-icon">
+					<span class="country-name">巴拿马</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Tunisia.jpg" alt="" class="country-icon">
+					<span class="country-name">突尼斯</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<p class="group-name">H组</p>
+			<ul >
+				<li class="">
+					<img src="images/Columbia.jpg" alt="" class="country-icon">
+					<span class="country-name">哥伦比亚</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Japan.jpg" alt="" class="country-icon">
+					<span class="country-name">日本</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Poland.jpg" alt="" class="country-icon">
+					<span class="country-name">波兰</span>
+					<span class="circle"></span>
+				</li>
+				<li class="">
+					<img src="images/Senegal.jpg" alt="" class="country-icon">
+					<span class="country-name">塞内加尔</span>
+					<span class="circle"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<a href="" class="next-button">进入淘汰赛</a>
+	<script src="js/main.js"></script>
+</body>
+</html>

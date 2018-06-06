@@ -1,0 +1,531 @@
+.sixteen_in_eight {
+  margin-top: 200px;
+  margin-left: 200px;
+  width: 50px;
+  height: 100px; }
+  .sixteen_in_eight .team_a_line {
+    width: 23px;
+    height: 48px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    float: left; }
+  .sixteen_in_eight .team_right {
+    width: 25px;
+    height: 49px;
+    float: left; }
+  .sixteen_in_eight .center_line {
+    width: 25px;
+    height: 0;
+    border-top: 2px solid #000;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    float: left; }
+  .sixteen_in_eight .team_b_line {
+    width: 23px;
+    height: 48px;
+    border-top: 0 !important;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 0 !important;
+    float: left; }
+  .sixteen_in_eight .team_win {
+    border: 2px solid #f00; }
+
+.groups {
+  overflow: hidden;
+  font-size: .64rem;
+  padding-bottom: 2.93333333rem;
+  color: #fff;
+  margin-top: 2rem; }
+  .groups .group {
+    width: 45%;
+    float: left;
+    margin-left: 3%;
+    background-color: #333d46;
+    margin-bottom: .96rem; }
+    .groups .group .group-name {
+      height: 1.38666667rem;
+      padding: 0 .53333333rem;
+      line-height: 1.38666667rem;
+      background-color: #404c57; }
+    .groups .group ul .team-act {
+      background-color: #16b13a; }
+    .groups .group ul li {
+      border-bottom: .02666667rem solid #241323; }
+      .groups .group ul li .country-icon {
+        height: .90666667rem;
+        margin-left: .53333333rem;
+        display: inline-block;
+        vertical-align: middle;
+        padding: .53333333rem 0; }
+      .groups .group ul li .country-name {
+        display: inline-block;
+        vertical-align: middle;
+        padding: .53333333rem 0; }
+      .groups .group ul li .circle {
+        width: .90666667rem;
+        height: .90666667rem;
+        border: 1px solid #929cac;
+        padding: 0;
+        border-radius: .90666667rem;
+        float: right;
+        margin: .48rem .53333333rem 0 0;
+        display: inline-block;
+        vertical-align: middle; }
+      .groups .group ul li .act {
+        line-height: .90666667rem;
+        border: none; }
+
+.next-button {
+  height: 2.45333333rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  line-height: 2.45333333rem;
+  background-color: #888;
+  color: #fff;
+  font-size: .90666667rem;
+  text-align: center; }
+
+.ok {
+  background-color: #ec6f3d; }
+
+.content {
+  height: 21.6rem;
+  color: #fff;
+  padding: 0 .42666667rem;
+  margin-top: 3.53333333rem; }
+  .content .grounp-8-left {
+    float: left; }
+    .content .grounp-8-left .grounp-8 {
+      position: relative;
+      width: 3.52rem;
+      height: 3.89333333rem;
+      margin-bottom: 1.49333333rem; }
+      .content .grounp-8-left .grounp-8 .team-16 {
+        float: left;
+        margin-left: 1px; }
+        .content .grounp-8-left .grounp-8 .team-16 .team .team-number {
+          position: absolute;
+          font-size: 1.06666667rem;
+          left: -.26666667rem;
+          -webkit-transform: scale(0.5) translate(-0.42667rem, -1.17333rem);
+          transform: scale(0.5) translate(-0.42667rem, -1.17333rem); }
+        .content .grounp-8-left .grounp-8 .team-16 .team .team-icon {
+          float: left;
+          width: 2.29333333rem;
+          text-align: center;
+          margin-top: -.21333333rem;
+          margin-bottom: .85333333rem; }
+          .content .grounp-8-left .grounp-8 .team-16 .team .team-icon img {
+            height: .74666667rem;
+            display: block;
+            margin: 0 auto; }
+          .content .grounp-8-left .grounp-8 .team-16 .team .team-icon span {
+            font-size: .64rem;
+            display: block;
+            width: 3.94666667rem;
+            margin-left: -.85333333rem;
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            line-height: 1.06666667rem; }
+        .content .grounp-8-left .grounp-8 .team-16 .team .screen {
+          position: absolute;
+          height: .74666667rem;
+          width: 1.17333333rem;
+          margin-top: -.21333333rem;
+          margin-left: .56rem;
+          background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-8-left .grounp-8 .team-16 .team .link-down {
+          position: absolute;
+          top: .13333333rem;
+          right: .42666667rem;
+          width: .58666667rem;
+          height: 1.49333333rem;
+          border: 2px solid #333d46;
+          border-left: transparent !important;
+          border-bottom: transparent !important; }
+        .content .grounp-8-left .grounp-8 .team-16 .team .link-up {
+          position: absolute;
+          top: 1.49333333rem;
+          right: .42666667rem;
+          width: .58666667rem;
+          height: 1.49333333rem;
+          border: 2px solid #333d46;
+          border-left: transparent !important;
+          border-top: transparent !important; }
+        .content .grounp-8-left .grounp-8 .team-16 .link-row {
+          width: .37333333rem;
+          border: 1px solid #333d46;
+          position: absolute;
+          top: 1.49333333rem;
+          right: 0; }
+  .content .grounp-4-left {
+    width: 2.61333333rem;
+    height: 100%;
+    float: left;
+    margin-left: .16rem; }
+    .content .grounp-4-left .grounp-4 {
+      position: relative;
+      height: 50%;
+      padding-top: 1px;
+      box-sizing: border-box; }
+      .content .grounp-4-left .grounp-4 .team-8:first-of-type {
+        margin-bottom: 4.53333333rem;
+        margin-top: 1.12rem; }
+      .content .grounp-4-left .grounp-4 .team-8 {
+        position: relative; }
+        .content .grounp-4-left .grounp-4 .team-8 div .team-icon {
+          width: 1.28rem;
+          height: .85333333rem;
+          background-color: #333d46; }
+          .content .grounp-4-left .grounp-4 .team-8 div .team-icon img {
+            display: block;
+            height: .85333333rem; }
+        .content .grounp-4-left .grounp-4 .team-8 div .screen {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: .85333333rem;
+          width: 1.28rem;
+          background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-4-left .grounp-4 .team-8 div .link-down {
+          position: absolute;
+          top: .26666667rem;
+          right: .37333333rem;
+          width: .58666667rem;
+          height: 2.77333333rem;
+          border: 2px solid #333d46;
+          border-left: transparent !important;
+          border-bottom: transparent !important; }
+        .content .grounp-4-left .grounp-4 .team-8 div .link-up {
+          position: absolute;
+          bottom: .37333333rem;
+          right: .37333333rem;
+          width: .58666667rem;
+          height: 2.72rem;
+          border: 2px solid #333d46;
+          border-left: transparent !important;
+          border-top: transparent !important; }
+      .content .grounp-4-left .grounp-4 .link-row {
+        width: .37333333rem;
+        border: 1px solid #333d46;
+        position: absolute;
+        top: 4.16rem;
+        right: 0; }
+  .content .grounp-2-left {
+    width: 1.33333333rem;
+    height: 100%;
+    float: left; }
+    .content .grounp-2-left div {
+      height: 100%;
+      position: relative; }
+      .content .grounp-2-left div .grounp-2 {
+        height: 50%;
+        padding-top: 1px;
+        position: relative; }
+        .content .grounp-2-left div .grounp-2 .team-icon {
+          margin-bottom: .16rem;
+          width: 1.28rem;
+          height: .85333333rem;
+          margin-top: 3.73333333rem;
+          background-color: #333d46; }
+          .content .grounp-2-left div .grounp-2 .team-icon div {
+            position: relative; }
+            .content .grounp-2-left div .grounp-2 .team-icon div img {
+              display: block;
+              height: .85333333rem; }
+            .content .grounp-2-left div .grounp-2 .team-icon div .screen {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 1.28rem;
+              height: .85333333rem;
+              background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-2-left div .grounp-2 .link-down {
+          position: absolute;
+          border: 1px solid #333d46;
+          height: 4.8rem;
+          width: 0;
+          left: .61333333rem; }
+        .content .grounp-2-left div .grounp-2 .link-up {
+          position: absolute;
+          border: 1px solid #333d46;
+          height: 4.8rem;
+          width: 0;
+          left: .61333333rem;
+          top: -1.33333333rem; }
+      .content .grounp-2-left div .link-row {
+        width: .48rem;
+        border: 1px solid #333d46;
+        position: absolute;
+        top: 9.49333333rem;
+        right: .10666667rem; }
+  .content .grounp-1-center {
+    float: left;
+    position: relative;
+    width: 4.05333333rem;
+    height: 100%;
+    left: .16rem; }
+    .content .grounp-1-center .cup {
+      display: block;
+      position: absolute;
+      top: 10.13333333rem;
+      left: .66666667rem;
+      width: 2.66666667rem; }
+    .content .grounp-1-center .link-row {
+      position: absolute;
+      top: 8.74666667rem;
+      left: 2rem;
+      width: 0;
+      height: .69333333rem;
+      border: 1px solid #333d46; }
+    .content .grounp-1-center .grounp-1 {
+      float: left;
+      margin-top: 9.06666667rem;
+      margin-bottom: .58666667rem; }
+      .content .grounp-1-center .grounp-1 .team-icon {
+        width: 1.28rem;
+        height: .85333333rem;
+        float: left;
+        position: relative;
+        background-color: #333d46; }
+        .content .grounp-1-center .grounp-1 .team-icon img {
+          display: block;
+          height: .85333333rem; }
+        .content .grounp-1-center .grounp-1 .team-icon .screen {
+          position: absolute;
+          width: 1.28rem;
+          height: .85333333rem;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.5); }
+      .content .grounp-1-center .grounp-1 .line-right {
+        float: left;
+        border: 1px solid #333d46;
+        width: .42666667rem;
+        height: 0;
+        margin-left: .21333333rem;
+        margin-top: .37333333rem; }
+      .content .grounp-1-center .grounp-1 .line-left {
+        float: left;
+        border: 1px solid #333d46;
+        width: .42666667rem;
+        margin-right: .16rem;
+        height: 0;
+        margin-top: .37333333rem; }
+    .content .grounp-1-center .champion {
+      margin: 0 auto;
+      position: absolute;
+      top: 5.06666667rem; }
+      .content .grounp-1-center .champion .icon-box .screen {
+        width: 2.18666667rem;
+        height: 1.49333333rem;
+        background-color: #333d46;
+        display: block;
+        margin: 0 auto; }
+      .content .grounp-1-center .champion .icon-box .champion-icon {
+        width: 2.18666667rem;
+        height: 1.49333333rem;
+        display: block;
+        margin: 0 auto; }
+      .content .grounp-1-center .champion .champion-name {
+        text-align: center;
+        font-size: .58666667rem;
+        margin: .16rem 0; }
+      .content .grounp-1-center .champion .champion-logo {
+        display: block;
+        width: 4.05333333rem;
+        margin-top: .16rem;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
+  .content .grounp-8-right {
+    float: right; }
+    .content .grounp-8-right .grounp-8 {
+      position: relative;
+      width: 3.52rem;
+      height: 3.89333333rem;
+      margin-bottom: 1.49333333rem; }
+      .content .grounp-8-right .grounp-8 .team-16 {
+        float: right;
+        margin-left: 1px; }
+        .content .grounp-8-right .grounp-8 .team-16 .team .team-number {
+          position: absolute;
+          font-size: 1.06666667rem;
+          right: -.26666667rem;
+          -webkit-transform: scale(0.5) translate(0.53333rem, -1.17333rem);
+          transform: scale(0.5) translate(0.53333rem, -1.17333rem); }
+        .content .grounp-8-right .grounp-8 .team-16 .team .team-icon {
+          float: left;
+          width: 2.29333333rem;
+          text-align: center;
+          margin-top: -.21333333rem;
+          margin-bottom: .85333333rem; }
+          .content .grounp-8-right .grounp-8 .team-16 .team .team-icon img {
+            height: .74666667rem;
+            display: block;
+            margin: 0 auto; }
+          .content .grounp-8-right .grounp-8 .team-16 .team .team-icon span {
+            font-size: .64rem;
+            display: block;
+            width: 3.94666667rem;
+            margin-left: -.85333333rem;
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            line-height: 1.06666667rem;
+            margin-left: -.85333333rem; }
+        .content .grounp-8-right .grounp-8 .team-16 .team .screen {
+          position: absolute;
+          height: .74666667rem;
+          width: 1.17333333rem;
+          margin-top: -.21333333rem;
+          margin-left: .56rem;
+          background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-8-right .grounp-8 .team-16 .team .link-down {
+          position: absolute;
+          top: .13333333rem;
+          left: .42666667rem;
+          width: .58666667rem;
+          height: 1.49333333rem;
+          border: 2px solid #333d46;
+          border-right: transparent !important;
+          border-bottom: transparent !important; }
+        .content .grounp-8-right .grounp-8 .team-16 .team .link-up {
+          position: absolute;
+          top: 1.49333333rem;
+          left: .42666667rem;
+          width: .58666667rem;
+          height: 1.49333333rem;
+          border: 2px solid #333d46;
+          border-right: transparent !important;
+          border-top: transparent !important; }
+        .content .grounp-8-right .grounp-8 .team-16 .link-row {
+          width: .37333333rem;
+          border: 1px solid #333d46;
+          position: absolute;
+          top: 1.49333333rem;
+          left: 0.03rem; }
+  .content .grounp-4-right {
+    width: 2.61333333rem;
+    height: 100%;
+    float: right; }
+    .content .grounp-4-right .grounp-4 {
+      position: relative;
+      height: 50%;
+      padding-top: 1px;
+      box-sizing: border-box; }
+      .content .grounp-4-right .grounp-4 .team-8:first-of-type {
+        margin-bottom: 4.53333333rem;
+        margin-top: 1.12rem; }
+      .content .grounp-4-right .grounp-4 .team-8 {
+        position: relative; }
+        .content .grounp-4-right .grounp-4 .team-8 div .team-icon {
+          width: 1.28rem;
+          height: .85333333rem;
+          background-color: #333d46;
+          margin-left: 1.22666667rem; }
+          .content .grounp-4-right .grounp-4 .team-8 div .team-icon img {
+            display: block;
+            height: .85333333rem; }
+          .content .grounp-4-right .grounp-4 .team-8 div .team-icon .screen {
+            position: absolute;
+            top: 0;
+            right: .10666667rem;
+            height: .85333333rem;
+            width: 1.28rem;
+            background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-4-right .grounp-4 .team-8 div .link-down {
+          position: absolute;
+          top: .37333333rem;
+          left: .37333333rem;
+          width: .58666667rem;
+          height: 2.61333333rem;
+          border: 2px solid #333d46;
+          border-right: transparent !important;
+          border-bottom: transparent !important; }
+        .content .grounp-4-right .grounp-4 .team-8 div .link-up {
+          position: absolute;
+          bottom: .37333333rem;
+          left: .37333333rem;
+          width: .58666667rem;
+          height: 2.72rem;
+          border: 2px solid #333d46;
+          border-right: transparent !important;
+          border-top: transparent !important; }
+      .content .grounp-4-right .grounp-4 .link-row {
+        width: .34666667rem;
+        border: 1px solid #333d46;
+        position: absolute;
+        top: 4.16rem;
+        left: 0; }
+  .content .grounp-2-right {
+    float: right;
+    width: 1.33333333rem;
+    height: 100%; }
+    .content .grounp-2-right div {
+      height: 100%;
+      position: relative; }
+      .content .grounp-2-right div .grounp-2 {
+        height: 50%;
+        padding-top: 1px;
+        position: relative; }
+        .content .grounp-2-right div .grounp-2 .team-icon {
+          margin-bottom: .16rem;
+          width: 1.28rem;
+          height: .85333333rem;
+          margin-top: 3.73333333rem;
+          background-color: #333d46;
+          margin-left: .10666667rem; }
+          .content .grounp-2-right div .grounp-2 .team-icon div {
+            position: relative; }
+            .content .grounp-2-right div .grounp-2 .team-icon div img {
+              display: block;
+              height: .85333333rem; }
+            .content .grounp-2-right div .grounp-2 .team-icon div .screen {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 1.28rem;
+              height: .85333333rem;
+              background-color: rgba(0, 0, 0, 0.5); }
+        .content .grounp-2-right div .grounp-2 .link-down {
+          position: absolute;
+          border: 1px solid #333d46;
+          height: 4.8rem;
+          width: 0;
+          left: .8rem; }
+        .content .grounp-2-right div .grounp-2 .link-up {
+          position: absolute;
+          border: 1px solid #333d46;
+          height: 4.8rem;
+          width: 0;
+          left: .8rem;
+          top: -1.28rem; }
+      .content .grounp-2-right div .link-row {
+        width: .48rem;
+        border: 1px solid #333d46;
+        position: absolute;
+        top: 9.49333333rem;
+        left: .26666667rem; }
+
+.screen {
+  display: none; }
+
+.confirm {
+  position: absolute;
+  bottom: 2.4rem;
+  font-size: .90666667rem;
+  width: 9.38666667rem;
+  height: 2.45333333rem;
+  left: 50%;
+  margin-left: -4.69333333rem;
+  line-height: 2.45333333rem;
+  background-color: #ec6f3d;
+  text-align: center;
+  color: #fff; }
+
+.gray {
+  background-color: #888; }
