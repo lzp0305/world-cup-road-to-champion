@@ -15,8 +15,10 @@
 	<script>
 		var mainData = {};
 		document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.getBoundingClientRect().width ||
-		  window.screen.width) / 20 + 'px'
+		  window.screen.width) / 20 + 'px';
+		$('body').css('height', $(window).height());
 	</script>
+	<img src="images/title.png" alt="" style="width: 100%; display: block; padding-top: 2rem;">
 	<div class="content">
 		<div class="grounp-8-left">
 			<div class="grounp-8">
@@ -192,7 +194,7 @@
 			</div>
 		</div>
 		<div class="grounp-1-center">
-			<img src="" alt="" class="cup">
+			<img src="images/cup.png" alt="" class="cup">
 			<div class="link-row"></div>
 			<div class="grounp-1">
 				<div class="team-icon Two1">
@@ -215,7 +217,7 @@
 					</div>
 				</div>
 				<p class="champion-name"></p>
-				<img src="" alt="" class="champion-logo">
+				<img src="images/champion-gray.png" alt="" class="champion-logo">
 			</div>
 		</div>
 		<div class="grounp-8-right">
@@ -442,116 +444,164 @@
 		// 16进8
 		$('.A1,.B2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			// 判断A1 B2中是否有进入四强的队伍
 			if ($('.Four1').find('img').attr('src') !== ''&& $('.Four1').find('img').attr('src') == $('.Eight1').find('img').attr('src')) {
 				// 替换四强旗帜
 				$('.Four1').find('img').attr('src', src);
+				$('.Four1').find('img').attr('data-n', name);
 				// 判断A1 B2中是否有进入二强的队伍
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Eight1').find('img').attr('src')) {
 					// 替换二强旗帜
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					// 判断A1 B2中是否有冠军
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight1').find('img').attr('src')) {
 						// 替换冠军旗帜
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			// 替换八强旗帜
 			$('.Eight1').find('img').attr('src', src);
+			$('.Eight1').find('img').attr('data-n', name);
 		});
 		$('.C1,.D2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four1').find('img').attr('src') !== ''&& $('.Four1').find('img').attr('src') == $('.Eight2').find('img').attr('src')) {
 				$('.Four1').find('img').attr('src', src);
+				$('.Four1').find('img').attr('data-n', name);
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Eight2').find('img').attr('src')) {
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight2').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight2').find('img').attr('src', src);
+			$('.Eight2').find('img').attr('data-n', name);
 		});
 		$('.E1,.F2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four2').find('img').attr('src') !== ''&& $('.Four2').find('img').attr('src') == $('.Eight3').find('img').attr('src')) {
 				$('.Four2').find('img').attr('src', src);
+				$('.Four2').find('img').attr('data-n', name);
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Eight3').find('img').attr('src')) {
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight3').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight3').find('img').attr('src', src);
+			$('.Eight3').find('img').attr('data-n', name);
 		});
 		$('.G1,.H2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four2').find('img').attr('src') !== ''&& $('.Four2').find('img').attr('src') == $('.Eight4').find('img').attr('src')) {
 				$('.Four2').find('img').attr('src', src);
+				$('.Four2').find('img').attr('data-n', name);
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Eight4').find('img').attr('src')) {
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight4').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight4').find('img').attr('src', src);
+			$('.Eight4').find('img').attr('data-n', name);
 		});
 
 		// 右侧
 		$('.B1,.A2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four3').find('img').attr('src') !== '' && $('.Four3').find('img').attr('src') == $('.Eight5').find('img').attr('src')) {
 				$('.Four3').find('img').attr('src', src);
+				$('.Four3').find('img').attr('data-n', name);
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Eight5').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight5').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight5').find('img').attr('src', src);
+			$('.Eight5').find('img').attr('data-n', name);
 		});
 		$('.D1,.C2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four3').find('img').attr('src') !== ''&& $('.Four3').find('img').attr('src') == $('.Eight6').find('img').attr('src')) {
 				$('.Four3').find('img').attr('src', src);
+				$('.Four3').find('img').attr('data-n', name);
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Eight6').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight6').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight6').find('img').attr('src', src);
+			$('.Eight6').find('img').attr('data-n', name);
 		});
 		$('.F1,.E2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four4').find('img').attr('src') !== ''&& $('.Four4').find('img').attr('src') == $('.Eight7').find('img').attr('src')) {
 				$('.Four4').find('img').attr('src', src);
+				$('.Four4').find('img').attr('data-n', name);
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Eight7').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight7').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight7').find('img').attr('src', src);
+			$('.Eight7').find('img').attr('data-n', name);
 		});
 		$('.H1,.G2').click(function() {
 			var src = $(this).find('img').attr('src');
+			var name = $(this).find('span').text();
 			if ($('.Four4').find('img').attr('src') !== ''&& $('.Four4').find('img').attr('src') == $('.Eight8').find('img').attr('src')) {
 				$('.Four4').find('img').attr('src', src);
+				$('.Four4').find('img').attr('data-n', name);
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Eight8').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Eight8').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 			} else {}
 			$('.Eight8').find('img').attr('src', src);
+			$('.Eight8').find('img').attr('data-n', name);
 		});
 
 
@@ -561,18 +611,23 @@
 		$('.Eight1,.Eight2').click(function() {
 			if ($('.Eight1').find('img').attr('src') !== '' && $('.Eight2').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				// 判断八强1、2中是否有进入二强的队伍
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Four1').find('img').attr('src')) {
 					// 替换二强旗帜
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					// 判断A1 B2中是否有冠军
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Four1').find('img').attr('src')) {
 						// 替换冠军旗帜
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 				// 替换四强旗帜
 				$('.Four1').find('img').attr('src', src);
+				$('.Four1').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
@@ -580,13 +635,18 @@
 		$('.Eight3,.Eight4').click(function() {
 			if ($('.Eight3').find('img').attr('src') !== '' && $('.Eight4').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				if ($('.Two1').find('img').attr('src') !== '' && $('.Two1').find('img').attr('src') == $('.Four2').find('img').attr('src')) {
 					$('.Two1').find('img').attr('src', src);
+					$('.Two1').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Four2').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 				$('.Four2').find('img').attr('src', src);
+				$('.Four2').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
@@ -595,13 +655,18 @@
 		$('.Eight5,.Eight6').click(function() {
 			if ($('.Eight5').find('img').attr('src') !== '' && $('.Eight6').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Four3').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Four3').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 				$('.Four3').find('img').attr('src', src);
+				$('.Four3').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
@@ -609,13 +674,18 @@
 		$('.Eight7,.Eight8').click(function() {
 			if ($('.Eight7').find('img').attr('src') !== '' && $('.Eight8').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				if ($('.Two2').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') == $('.Four4').find('img').attr('src')) {
 					$('.Two2').find('img').attr('src', src);
+					$('.Two2').find('img').attr('data-n', name);
 					if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Four4').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				} else {}
 				$('.Four4').find('img').attr('src', src);
+				$('.Four4').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
@@ -626,11 +696,15 @@
 		$('.Four1,.Four2').click(function() {
 			if ($('.Four1').find('img').attr('src') !== '' && $('.Four2').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Two1').find('img').attr('src')) {
 						// 替换冠军旗帜
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				$('.Two1').find('img').attr('src', src);
+				$('.Two1').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
@@ -638,20 +712,27 @@
 		$('.Four3,.Four4').click(function() {
 			if ($('.Four3').find('img').attr('src') !== '' && $('.Four4').find('img').attr('src') !== '') {
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				if ($('.champion-icon').attr('src') !== '' && $('.champion-icon').attr('src') == $('.Two2').find('img').attr('src')) {
 						$('.champion-icon').attr('src', src);
+						$('.champion-icon').attr('data-n', name);
+						$('.champion-name').text(name);
 					} else {}
 				$('.Two2').find('img').attr('src', src);
+				$('.Two2').find('img').attr('data-n', name);
 			} else {
 				return false;
 			}
 		});
 		// 2进1
 		$('.Two1,.Two2').click(function() {
-			if ($('.Two1').attr('src') !== '' && $('.Two2').attr('src') !== '') {
+			if ($('.Two1').find('img').attr('src') !== '' && $('.Two2').find('img').attr('src') !== '') {
 				// $('.champion').find('.screen').remove();
 				var src = $(this).find('img').attr('src');
+				var name = $(this).find('img').attr('data-n');
 				$('.champion-icon').attr('src', src);
+				$('.champion-name').text(name);
+				$('.champion-logo').attr('src', 'images/champion-gold.png');
 			} else {
 				return false;
 			};

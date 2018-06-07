@@ -1,39 +1,10 @@
-.sixteen_in_eight {
-  margin-top: 200px;
-  margin-left: 200px;
-  width: 50px;
-  height: 100px; }
-  .sixteen_in_eight .team_a_line {
-    width: 23px;
-    height: 48px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-    border-bottom: 0 !important;
-    border-left: 0 !important;
-    float: left; }
-  .sixteen_in_eight .team_right {
-    width: 25px;
-    height: 49px;
-    float: left; }
-  .sixteen_in_eight .center_line {
-    width: 25px;
-    height: 0;
-    border-top: 2px solid #000;
-    border-right: 0 !important;
-    border-bottom: 0 !important;
-    border-left: 0 !important;
-    float: left; }
-  .sixteen_in_eight .team_b_line {
-    width: 23px;
-    height: 48px;
-    border-top: 0 !important;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    border-left: 0 !important;
-    float: left; }
-  .sixteen_in_eight .team_win {
-    border: 2px solid #f00; }
-
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: 100% auto;
+  background-position: bottom  center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
 .groups {
   overflow: hidden;
   font-size: .64rem;
@@ -97,7 +68,7 @@
   height: 21.6rem;
   color: #fff;
   padding: 0 .42666667rem;
-  margin-top: 3.53333333rem; }
+  padding-top: 2rem; }
   .content .grounp-8-left {
     float: left; }
     .content .grounp-8-left .grounp-8 {
@@ -516,7 +487,7 @@
 
 .confirm {
   position: absolute;
-  bottom: 2.4rem;
+  bottom: 1rem;
   font-size: .90666667rem;
   width: 9.38666667rem;
   height: 2.45333333rem;
