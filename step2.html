@@ -4,21 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+	<link rel="SHORTCUT ICON" href="images/favicon.png">
 	<meta name="author" content="云端科技 www.yunduancn.com">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 	<title></title>
 	<link rel="stylesheet" href="css/minireset.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+	<script src="js/canvas2image.js"></script>
 </head>
-<body style="background-color: #1d1325;">
+<body style="background-color: #0e0a09; position: relative;">
+	<div style="position: absolute;bottom: 0;left: 0; z-index: 0;background-image: url(images/bg.jpg); background-repeat: no-repeat; background-position: bottom center; height: 100%;" class="bgi"></div>
+	<script>
+		var oh = $(window).height();
+		var ow = $(window).width();
+		$('.bgi').css('width', ow);
+		$('.bgi').css('height', oh);
+	</script>
 	<script>
 		var mainData = {};
 		document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.getBoundingClientRect().width ||
 		  window.screen.width) / 20 + 'px';
 		$('body').css('height', $(window).height());
 	</script>
-	<img src="images/title.png" alt="" style="width: 100%; display: block; padding-top: 2rem;">
+<div id="dd"></div>
+	<img src="images/title.png" alt="" style="width: 95%; display: block; /* padding-top: 2rem; */ margin: 0 auto; position: relative;z-index: 1;">
+	<div class="huan" style="font-size: 0.64rem; line-height: 1.2rem; text-align: center; color: #fff; padding-bottom: 0.3rem; position: absolute; width: 100%;">点击国旗进行操作</div>
 	<div class="content">
 		<div class="grounp-8-left">
 			<div class="grounp-8">
@@ -29,7 +41,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -41,7 +52,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -55,7 +65,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -67,7 +76,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -81,7 +89,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -93,7 +100,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -107,7 +113,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -119,7 +124,6 @@
 							<img src="" alt="">
 							<span></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -133,7 +137,6 @@
 						<div class="team-icon Eight1">
 							<img src="" alt="">
 						</div>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 				</div>
@@ -142,7 +145,6 @@
 						<div class="team-icon Eight2">
 							<img src="" alt="">
 						</div>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 				</div>
@@ -154,7 +156,6 @@
 						<div class="team-icon Eight3">
 							<img src="" alt="">
 						</div>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 				</div>
@@ -163,7 +164,6 @@
 						<div class="team-icon Eight4">
 							<img src="" alt="">
 						</div>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 				</div>
@@ -194,7 +194,7 @@
 			</div>
 		</div>
 		<div class="grounp-1-center">
-			<img src="images/cup.png" alt="" class="cup">
+			<!-- <img src="images/cup.png" alt="" class="cup"> -->
 			<div class="link-row"></div>
 			<div class="grounp-1">
 				<div class="team-icon Two1">
@@ -229,7 +229,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -241,7 +240,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -255,7 +253,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -267,7 +264,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -281,7 +277,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -293,7 +288,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -307,7 +301,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-down"></p>
 					</div>
 					<p class="link-row"></p>
@@ -319,7 +312,6 @@
 							<img src="" alt="">
 							<span class=""></span>
 						</p>
-						<div class="screen"></div>
 						<p class="link-up"></p>
 					</div>
 					<p class="link-row"></p>
@@ -394,25 +386,20 @@
 			</div>
 		</div>
 	</div>
+	<img src="images/qr.png" alt="" class="qr">
 	<div class="confirm gray">完成</div>
+</div>
 
 
-
-
-<!-- 	<button class="b1" style="width:5rem;height:2rem;margin: 100px auto;display: block;">显示全部</button>
-	<button class="b2" style="width:5rem;height:2rem;margin: 100px auto;display: block;">格式化</button>
-	<button class="b3" style="width:5rem;height:2rem;margin: 100px auto;display: block;">清除缓存</button> -->
 
 
 
 	<script>
 		var data2 = JSON.parse(localStorage.getItem('key'));
 
-
-		$('.b1').click(function() {
-			console.log(data2);
-		});
-
+		if (data2==""||data2==null) {
+			window.location.href = "index.html";
+		}
 
 		$(document).ready(function() {
 			$.each(data2, function(i, item) {
@@ -427,11 +414,6 @@
 
 
 			// 下面代码是清除本地储存的值，测试时候可以注释掉
-   			// localStorage.removeItem('key');
-		});
-
-
-		$('.b3').click(function() {
    			localStorage.removeItem('key');
 		});
 
@@ -743,9 +725,35 @@
 				$('.gray').addClass('allright').removeClass('gray');
 			} else {}
 
+		});
 
 
-			$('.allright').click(function() {
+		var height = $(window).height();
+		var width = $(window).width();
+		function screenShot(){
+			$('.huan').html('长按保存保存图片生成你的冠军之路')
+			html2canvas(document.body, {allowTaint: false}).then(function(canvas) {
+				var context = canvas.getContext('2d');
+				// 【重要】关闭抗锯齿
+				context.mozImageSmoothingEnabled = false;
+				context.webkitImageSmoothingEnabled = false;
+				context.msImageSmoothingEnabled = false;
+				context.imageSmoothingEnabled = false;
+				var image = canvas.toDataURL("image/png");
+				var pHtml = "<img src="+image+" width='"+width+"' height='"+height+"'/>";
+				$('body').html(pHtml);
+			});
+		}
+		function iinn(canvas) {
+
+		}
+
+
+
+		$('.confirm').click(function() {
+			if ($(this).hasClass('allright')) {
+				$(this).css('display', 'none');
+				$('.qr').css('display', 'block');
 				var championSrc= $('.champion-icon').attr('src');
 				// $('[src="'+championSrc+'"]').css('background', '#f00');
 				// #f4d650
@@ -770,18 +778,14 @@
 				});
 
 				$('.grounp-1-center').children('.link-row').css('border', '1px solid #f4d650');
-			});
+				screenShot();
+			} else {
+				return false;
+			}
 		});
 
 
-
-	// location.reload(1)
-
-
-
-
 	</script>
-
 
 
 	<script src="js/main.js"></script>

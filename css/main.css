@@ -1,22 +1,30 @@
-body {
+/* body {
   background-image: url(../images/bg.jpg);
   background-size: 100% auto;
   background-position: bottom  center;
   background-repeat: no-repeat;
   background-color: #000;
+} */
+.qr {
+  display: none;
+  width: 50%;
+  margin: 0 25%;
+  position: relative;
+  bottom: 5rem;
 }
 .groups {
   overflow: hidden;
   font-size: .64rem;
   padding-bottom: 2.93333333rem;
   color: #fff;
-  margin-top: 2rem; }
+  /* margin-top: 2rem; */ }
   .groups .group {
     width: 45%;
     float: left;
     margin-left: 3%;
     background-color: #333d46;
-    margin-bottom: .96rem; }
+    margin-bottom: .96rem;
+    position: relative; }
     .groups .group .group-name {
       height: 1.38666667rem;
       padding: 0 .53333333rem;
@@ -68,7 +76,7 @@ body {
   height: 21.6rem;
   color: #fff;
   padding: 0 .42666667rem;
-  padding-top: 2rem; }
+  /* padding-top: 2rem; */ }
   .content .grounp-8-left {
     float: left; }
     .content .grounp-8-left .grounp-8 {
@@ -486,7 +494,7 @@ body {
   display: none; }
 
 .confirm {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   font-size: .90666667rem;
   width: 9.38666667rem;

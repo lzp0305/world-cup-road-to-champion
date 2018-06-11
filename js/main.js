@@ -61,7 +61,8 @@ $(document).click(function() {
 			localStorage.setItem('key', JSON.stringify(arr));
 		});
 	} else {
-		$('.next-button').removeClass('ok')
+		$('.next-button').removeClass('ok');
+		$('.next-button').attr('href', 'javascript:void(0);');
 	}
 });
 

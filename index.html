@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+	<link rel="SHORTCUT ICON" href="images/favicon.png">
 	<meta name="author" content="云端科技 www.yunduancn.com">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
 	<title></title>
@@ -11,13 +12,21 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.7.1.min.js"></script>
 </head>
-<body>
+<body style="background-color: #0e0a09; position: relative;">
+	<div style="position: absolute;bottom: 0;left: 0; z-index: 0;background-image: url(images/bg.jpg); background-repeat: no-repeat; background-position: bottom center; height: 100%;" class="bgi"></div>
+	<script>
+		var oh = $(window).height();
+		var ow = $(window).width();
+		$('.bgi').css('width', ow);
+		$('.bgi').css('height', oh);
+	</script>
 	<script>
 		var mainData = {};
 		document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.getBoundingClientRect().width ||
 		  window.screen.width) / 20 + 'px'
 	</script>
-	<img src="images/title.png" alt="" style="width: 100%;display: block; margin-top: 2rem;">
+	<img src="images/title.png" alt="" style="width: 95%;display: block; margin: 2rem auto 0;">
+	<div style="font-size: 0.64rem; line-height: 1.2rem; text-align: center; color: #fff; padding-bottom: 0.3rem;">请在每组选择两支球队晋级淘汰赛</div>
 	<div class="groups">
 		<div class="group">
 			<p class="group-name">A组</p>
@@ -220,7 +229,7 @@
 			</ul>
 		</div>
 	</div>
-	<a href="" class="next-button">进入淘汰赛</a>
+	<a href="javascript:void(0);" class="next-button">进入淘汰赛</a>
 	<script src="js/main.js"></script>
 </body>
 </html>
